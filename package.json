@@ -1,0 +1,44 @@
+{
+  "name": "liusitongtest",
+  "version": "0.1.1",
+  "description": "基于antd进行二次封装的geo-ui组件库",
+  "main": "build/index",
+  "scripts": {
+    "build": "babel lib -d build",
+    "build:watch": "babel lib -w -d build",
+    "lint": "eslint lib/**; exit 0",
+    "lint:watch": "esw -w lib/**",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@code.aliyun.com:geo/geo-components.git"
+  },
+  "author": "geo-all-web-developers",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/runtime-corejs2": "^7.7.7",
+    "@babel/runtime-corejs3": "^7.7.7",
+    "antd": "^3.26.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.0",
+    "eslint": "^4.7.2",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^5.1.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-watch": "^6.0.1",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "dependencies": {}
+}
